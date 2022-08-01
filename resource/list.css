@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #dbdbdb;
+    position: relative;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.list .pallete{
+    margin: 20px auto;
+    width: 95%;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.list .pallete .image{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.list .pallete .image img{
+    height: 100%;
+    width: auto;
+}
+.list .pallete .descrp{
+    height: 200px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.list .pallete .descrp .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.list .pallete .descrp .rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+.list .pallete .descrp .ratebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 45px;
+    height: 25px;
+}
+.list .pallete .descrp .numrate{
+    font-size: 14px;
+    color: rgb(143, 143, 143);
+}
+.list .pallete .descrp .pr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
+    height: 30px;
+}
+.list .pallete .descrp .pr .price{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.list .pallete .descrp .pr .oprice{
+    color: rgb(143, 143, 143);
+    text-decoration: line-through;
+    font-size: 22px;
+}
+.list .pallete .descrp .pr .discount{
+    font-size: 24px;
+    color: green;
+}

@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #dbdbdb;
+    position: relative;
+}
+.descplist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.descplist .descpitem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.descplist .descpitem .cont1{
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    overflow: hidden;
+}
+.descplist .descpitem .cont1,.cont2,.cont3{
+    margin: 10px auto;
+    position: relative;
+}
+.descplist .descpitem .cont3{
+    width: 100%;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px gray;
+    overflow: hidden;
+}
+.descplist .descpitem .cont3 .prolist{
+    width: 95%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.descplist .descpitem .cont3 .prolist .procard{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.descplist .descpitem .cont3 .prolist .procard:hover{
+    transform: matrix(1.01, 0, 0, 1.01, -2, -2);
+    box-shadow: 4px 4px 10px rgb(128, 128, 128);
+}
+.descplist .descpitem .cont3 .prolist .procard .fav{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+.descplist .descpitem .cont3 .prolist .procard .fav img{
+    width: 20px;
+    height: auto;
+}
+.descplist .descpitem .cont3 .prolist .procard .pimg-block{
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.descplist .descpitem .cont3 .prolist .procard .pimg-block img{
+    height: 130px;
+    width: auto;
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block{
+    display: grid;
+    grid-template: 'n n n n n n' 'r r nr nr nr nr' 'p p op op d d';
+    width: 175px;
+    height: 90px;
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block .name{
+    grid-area: n;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    line-height: 120%;
+    /* cursor: pointer; */
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block .rating{
+    grid-area: r;
+    display: flex;
+    align-items: center;
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block .rating .box{
+    background-color: green;
+    width: 40px;
+    height: 20px;
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block .numrating{
+    grid-area: nr;
+    font-size: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: rgb(143, 143, 143);
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block .price{
+    grid-area: p;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block .oprice{
+    grid-area: op;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: rgb(143, 143, 143);
+    text-decoration: line-through;
+}
+.descplist .descpitem .cont3 .prolist .procard .pdesc-block .discount{
+    grid-area: d;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+.descplist .descpitem .cont1 .sect1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 650px;
+}
+.descplist .descpitem .cont1 .sect1 .photo{
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.descplist .descpitem .cont1 .sect1 .photo img{
+    height: 100%;
+    width: auto;
+}
+.descplist .descpitem .cont1 .sect1 .buycart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    height: 100px;
+}
+.descplist .descpitem .cont1 .sect1 .buycart .addcart{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    width: 140px;
+    border-radius: 5px;
+    background-color: orange;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.842);
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.descplist .descpitem .cont1 .sect1 .buycart .buynow{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    width: 140px;
+    border-radius: 5px;
+    background-color: orangered;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.842);
+    position: relative;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.descplist .descpitem .cont1 .sect1 .buycart .addcart:hover{
+    transform: matrix(1.01, 0, 0, 1.01, -2, -2);
+    box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.774);
+}
+.descplist .descpitem .cont1 .sect1 .buycart .buynow:hover{
+    transform: matrix(1.01, 0, 0, 1.01, -2, -2);
+    box-shadow: 4px 4px 10px rgba(128, 128, 128, 0.774);
+}
+.descplist .descpitem .cont1 .sect2{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+}
+.descplist .descpitem .cont1 .sect2 .name{
+    font-size: 28px;
+    font-weight: 600;
+}
+.descplist .descpitem .cont1 .sect2 .rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+}
+.descplist .descpitem .cont1 .sect2 .rating .ratebox{
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.descplist .descpitem .cont1 .sect2 .rating .numrate{
+    font-size: 14px;
+    color: rgb(143, 143, 143);
+}
+.descplist .descpitem .cont1 .sect2 .pr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.descplist .descpitem .cont1 .sect2 .pr .price{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.descplist .descpitem .cont1 .sect2 .pr .oprice{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: rgb(143, 143, 143);
+    text-decoration: line-through;
+}
+.descplist .descpitem .cont1 .sect2 .pr .discount{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+}
+.descplist .descpitem .cont1 .sect2 .offers{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.descplist .descpitem .cont1 .sect2 .seller{
+    font-size: 18px;
+}
+.descplist .descpitem .cont1 .sect2 .offers ._4offers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    font-size: 18px;
+}
+.descplist .descpitem .cont1 .sect2 .offers ._4offers img{
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+.descplist .descpitem .cont2{
+    width: 95%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+.descplist .descpitem .cont2 img{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    animation: pan 20s ease 0s 1 forwards;
+}
+@keyframes pan {
+    0%{
+        left: 0px;
+        width: 100%;
+        height: auto;
+    }
+    100%{
+        left: 0px;
+        width: 115%;
+        height: auto;
+    }
+}
+
+.descplist .descpitem .cont2 .grad{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(0, 0, 0), 70%, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.descplist .descpitem .cont2 .data{
+    height: 100%;
+    width: 550px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 3;
+    color: white;
+    font-size: 22px;
+    padding: 20px 40px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}

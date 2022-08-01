@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NearEbuy.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="./resource/index.js"></script>
+    <link rel="stylesheet" href="./resource/index.css">
+</head>
+<body>
+
+    <!-- Top navigation bar -->
+    <header>
+        <div class="nav">
+            <div class="logo"><a>NearEbuy.com</a></div>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search and Hit Enter (e.g. apple or besan)">
+            </div>
+            <div class="mine">
+                <!-- <a id="cart">
+                    <img src="Images_icons/Cart.svg"><span>Cart</span>
+                </a> -->
+                <a id="login">Log in</a>
+                <div class="afterlogin">
+                    <img src="Images_icons/user.png" alt="usericon">
+                    <span>HI</span>
+                </div>
+                <div class="signout">Sign out</div>
+            </div>
+        </div>
+        <div class="cat">
+            <a>Grocery</a>
+            <a>Cleaning & Household</a>
+            <a>Fruits & Vegetables</a>
+        </div>
+    </header>
+    <!-- Top navigation bar -->
+
+    <!-- main content -->
+    <div class="content">
+        <!-- Image slider -->
+        <div class="slider">
+            <div class="left">&#60</div>
+            <div class="holder">
+                <div class="img-space">
+                    <div class="img-block"><img src="Images_icons/1.jpg" alt="image1"></div>
+                    <div class="img-block"><img src="Images_icons/2.jpg" alt="image2"></div>
+                    <div class="img-block"><img src="Images_icons/3.jpg" alt="image3"></div>
+                    <div class="img-block"><img src="Images_icons/4.jpg" alt="image4"></div>
+                </div>
+                <div class="dots">
+                    <div id="dot1" ></div>
+                    <div id="dot2" ></div>
+                    <div id="dot3" ></div>
+                    <div id="dot4" ></div>
+                </div>
+            </div>
+            <div class="right">&#62</div>
+        </div>
+        <!-- Image slider -->
+        <div class="products">
+            <div class="cat-block">
+                <div class="cathead">
+                    <div class="grad"></div>
+                    <img src="Images_icons/Cat1.jpg" alt="Grocery">
+                    <span>Grocery</span>
+                </div>
+                <div class="prolist">
+                    <div class="procard" id="c01p001">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat1_Product_Photos/c01p001.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Aashirvaad Atta/Godihittu</div>
+                            <div class="rating"><div class="box">4.1</div></div>
+                            <div class="numrating">39491 Ratings</div>
+                            <div class="price">&#8377 389</div>
+                            <div class="oprice">&#8377 490</div>
+                            <div class="discount">21% off</div>
+                        </div>
+                    </div>
+                    <div class="procard" id="c01p002">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat1_Product_Photos/c01p002.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Besan</div>
+                            <div class="rating"><div class="box">4.0</div></div>
+                            <div class="numrating">35641 Ratings</div>
+                            <div class="price">&#8377 74</div>
+                            <div class="oprice">&#8377 160</div>
+                            <div class="discount">53% off</div>
+                        </div>
+                    </div>
+                    <div class="procard" id="c01p003">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat1_Product_Photos/c01p003.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Dailya Broken Wheat</div>
+                            <div class="rating"><div class="box">4.5</div></div>
+                            <div class="numrating">32311 Ratings</div>
+                            <div class="price">&#8377 25</div>
+                            <div class="oprice">&#8377 50</div>
+                            <div class="discount">50% off</div>
+                        </div>
+                    </div>
+                    <div class="procard" id="c01p004">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat1_Product_Photos/c01p004.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Kabuli Chana</div>
+                            <div class="rating"><div class="box">4.2</div></div>
+                            <div class="numrating">30021 Ratings</div>
+                            <div class="price">&#8377 66</div>
+                            <div class="oprice">&#8377 83</div>
+                            <div class="discount">20% off</div>
+                        </div>
+                    </div>
+                    <div class="procard" id="c01p005">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat1_Product_Photos/c01p005.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Maida</div>
+                            <div class="rating"><div class="box">4.0</div></div>
+                            <div class="numrating">2651 Ratings</div>
+                            <div class="price">&#8377 35</div>
+                            <div class="oprice">&#8377 80</div>
+                            <div class="discount">56% off</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="cat-block">
+                <div class="prolist">
+                    <div id="c02p001" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat2_Product_Photos/c02p001.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Harpic Original Disinfectant Toilet Cleaner Liquid</div>
+                            <div class="rating"><div class="box">4.2</div></div>
+                            <div class="numrating">24129 Ratings</div>
+                            <div class="price">&#8377 133</div>
+                            <div class="oprice">&#8377 178</div>
+                            <div class="discount">25% off</div>
+                        </div>
+                    </div>
+                    <div id="c02p002" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat2_Product_Photos/c02p002.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Lizol Disinfectant Floor Cleaner Liquid</div>
+                            <div class="rating"><div class="box">4.2</div></div>
+                            <div class="numrating">19593 Ratings</div>
+                            <div class="price">&#8377 415</div>
+                            <div class="oprice">&#8377 564</div>
+                            <div class="discount">26% off</div>
+                        </div>
+                    </div>
+                    <div id="c02p003" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat2_Product_Photos/c02p003.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Savlon Surface Disinfectant Spray</div>
+                            <div class="rating"><div class="box">4.4</div></div>
+                            <div class="numrating">791 Ratings</div>
+                            <div class="price">&#8377 294</div>
+                            <div class="oprice">&#8377 318</div>
+                            <div class="discount">24% off</div>
+                        </div>
+                    </div>
+                    <div id="c02p004" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat2_Product_Photos/c02p004.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Vim Dishwash Bar</div>
+                            <div class="rating"><div class="box">4.3</div></div>
+                            <div class="numrating">22424 Ratings</div>
+                            <div class="price">&#8377 41</div>
+                            <div class="oprice">&#8377 45</div>
+                            <div class="discount">10% off</div>
+                        </div>
+                    </div>
+                    <div id="c02p005" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat2_Product_Photos/c02p005.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Surf Excel Matic Liquid Detergent</div>
+                            <div class="rating"><div class="box">4.3</div></div>
+                            <div class="numrating">9329 Ratings</div>
+                            <div class="price">&#8377 547</div>
+                            <div class="oprice">&#8377 760</div>
+                            <div class="discount">28% off</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cathead">
+                    <div class="grad"></div>
+                    <img src="Images_icons/Cat2.jpg" alt="Household">
+                    <span>Cleaning & Household</span>
+                </div>
+            </div>
+            <hr>
+            <div class="cat-block">
+                <div class="cathead">
+                    <div class="grad"></div>
+                    <img src="Images_icons/Cat3.jpg" alt="Fruits">
+                    <span>Fruits & Vegetables</span>
+                </div>
+                <div class="prolist">
+                    <div id="c03p001" class="procard">
+                        <div class="fav">
+                            <img src="./Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat3_Product_Photos/c03p001.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Apple (1 kg)</div>
+                            <div class="rating"><div class="box">4.6</div></div>
+                            <div class="numrating">15623 Ratings</div>
+                            <div class="price">&#8377 200</div>
+                            <div class="oprice">&#8377 250</div>
+                            <div class="discount">20% off</div>
+                        </div>
+                    </div>
+                    <div id="c03p002" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat3_Product_Photos/c03p002.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Banana (1 dozen)</div>
+                            <div class="rating"><div class="box">4.3</div></div>
+                            <div class="numrating">15491 Ratings</div>
+                            <div class="price">&#8377 22</div>
+                            <div class="oprice">&#8377 40</div>
+                            <div class="discount">46% off</div>
+                        </div>
+                    </div>
+                    <div id="c03p003" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat3_Product_Photos/c03p003.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Bitter Gourd (1 kg)</div>
+                            <div class="rating"><div class="box">4.9</div></div>
+                            <div class="numrating">12655 Ratings</div>
+                            <div class="price">&#8377 56</div>
+                            <div class="oprice">&#8377 70</div>
+                            <div class="discount">20% off</div>
+                        </div>
+                    </div>
+                    <div id="c03p004" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat3_Product_Photos/c03p004.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Brinjal (1 kg)</div>
+                            <div class="rating"><div class="box">3.5</div></div>
+                            <div class="numrating">1248 Ratings</div>
+                            <div class="price">&#8377 36</div>
+                            <div class="oprice">&#8377 82</div>
+                            <div class="discount">56% off</div>
+                        </div>
+                    </div>
+                    <div id="c03p005" class="procard">
+                        <div class="fav">
+                            <img src="Images_icons/heart.svg" alt="heart">
+                        </div>
+                        <div class="pimg-block">
+                            <img src="./Cat3_Product_Photos/c03p005.jpg" alt="product_image">
+                        </div>
+                        <div class="pdesc-block">
+                            <div class="name">Cabbage (1 piece)</div>
+                            <div class="rating"><div class="box">2.9</div></div>
+                            <div class="numrating">531 Ratings</div>
+                            <div class="price">&#8377 11</div>
+                            <div class="oprice">&#8377 26</div>
+                            <div class="discount">58% off</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="loginbox">
+        <div class="contain1">
+            <div class="sign1">Log in</div>
+            <div class="sign2">Sign up</div>
+        </div>
+        <div class="contain2">
+                <form>
+                    <input type="text" name="username1" id="username1" placeholder="User name" required>
+                    <input type="password" name="password1" id="password1" placeholder="Password" required>
+                    <!-- <input type="submit" value="Log in"> -->
+                    <button type="button">Log in</button>
+                    <div class="forgetpass">Forgot password?</div>
+                </form>
+                <form>
+                    <input type="text" name="username2" id="username2" placeholder="User name" required>
+                    <input type="email" name="email" id="email" placeholder="Email ID" required>
+                    <input type="password" name="password2" id="password2" placeholder="Password" required>
+                    <!-- <input type="submit" value="Sign up"> -->
+                    <button type="button">Sign up</button>
+                </form>
+        </div>
+    </div>
+    <div class="pl">
+        <iframe src="./resource/list.html" class="mainlist" scrolling="no"></iframe>
+    </div>
+    <div class="pd">
+        <iframe src="./resource/descp.html" class="prod" scrolling="no"></iframe>
+    </div>
+    <footer>
+        &#169 All rights reserved | 2021 | NearEbuy.com
+    </footer>
+</body>
+</html>
